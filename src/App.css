@@ -1,0 +1,769 @@
+
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7E64F1;
+  color: white;
+  padding: 10px 20px;
+  width: 98%;
+  height: 25px;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+
+  
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.search-box {
+  border-radius: 5px;
+  mix-blend-mode: hard-light;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.51);
+  align-items: center;
+}
+
+
+.search-box input[type="text"] {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 5px;
+  margin-left: 10px; /* Adjust spacing */
+}
+
+.nav-icons {
+  display: flex;
+  font-size: 1.2rem;
+  color: white;
+  margin-left: 5px; /* Adjust margin between icons */
+  padding: 5px;
+ 
+}
+
+.nav-icon {
+  font-size: 1.2rem;
+  color: white;
+  margin-left: 5px;
+  
+}
+
+.nav-icon svg{
+  padding:5px;
+  
+}
+
+
+.nav-icon:hover {
+  color:#d2d2d2;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .nav-left {
+    flex-direction: column; /* Change flex direction to column */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .search-box {
+    margin-top: 10px; /* Add margin for separation */
+  }
+
+  .nav-icons {
+    margin-top: 10px; /* Add margin for separation */
+  }
+
+  .nav-icon {
+    margin-left: 5%; /* Reset margin for icons */
+  }
+}
+
+/* header */
+/* Header.css */
+
+.header {
+  grid-area: header;
+  background-color: white;
+  color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 45px;
+  left: 15vw; /* Adjust this value to match the width of your sidebar */
+  right: 0;
+  border-bottom: 1px solid #ccc; /* Add a bottom border */
+  padding-bottom: 15px; /* Add some padding to separate the line from the content */
+  height: 10px;
+  z-index: 1000;
+  
+}
+
+
+.menu-icon {
+  cursor: pointer;
+  display: flex;
+  align-items: left;
+}
+
+.menu-icon svg {
+  margin-right: 5px;
+}
+
+.menu-icon h5 {
+  margin: 0;
+  margin-right: 14px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+.header-left svg {
+  margin-right: 8px; /* Adjust this value for the desired gap */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  padding-left: 1200px;
+ 
+}
+
+
+.header-right svg {
+  margin-left: 10px;
+}
+
+.header-icon {
+  font-size: 24px;
+
+}
+
+.head-left {
+  display: flex;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  
+
+}
+
+
+/* sidebar */
+#sidebar {
+ 
+    width: 15vw;
+    height: 100vh;
+    background-color:white;
+    position:fixed;
+    transition: transform 0.3s ease-in-out;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    box-sizing: border-box;
+    border-right: 1px solid #ccc;
+    top: 45px;
+    
+   }
+  .profile-button {
+    display: flex;
+    align-items:center;
+    padding: 10px;
+    cursor: pointer;
+    height: 15px;
+
+  }
+  
+
+
+  .profile-icon-square {
+    width: 17px; /* Adjust size as needed */
+    height: 17px; /* Adjust size as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc; /* Add border for square appearance */
+    color:#7E64F1;
+    background-color:#BFAAFF;
+    position: relative;
+    border-radius: 5px;
+   
+  }
+
+
+.icon {
+  color:black; 
+  font-size:2 px; 
+} 
+  
+
+.sidebar-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px 0px 30px;
+  margin-bottom:20px; 
+  color:black;
+}
+
+
+
+.sidebar-list {
+  padding: 5%;
+  list-style-type: none;
+  
+
+
+ 
+}
+
+.sidebar-list-item {
+  padding:5px 10px 0px 10px;
+  font-size: 16px;
+  border: 2px;
+  border-radius: 5px;
+  text-decoration: none;
+  color:#0a0a0a;
+  transition: color 0.3s ease;  
+
+
+  
+}
+.sidebar-list-item svg {
+  margin-right: 8px; /* Adjust this value for the desired gap */
+   
+  
+}
+
+.sidebar-list-item:hover {
+  background-color: #BFAAFF;
+  padding-left: 2px;
+  padding-right: 5px;
+  cursor:auto;
+  color: #7E64F1;
+}
+
+.sidebar-list-item a .icon {
+  margin-right: 10px; /* Adjust the margin to add space between icon and text */
+}
+
+.sidebar-list-item:hover {
+  color: black !important; /* Change text color to black on hover */
+}
+
+.sidebar-list-item > a {
+  text-decoration: none;
+  color:black;
+  transition: color 0.3s ease;
+  padding-top: 10px;
+}
+
+.sidebar-responsive {
+  display: inline !important;
+  position: absolute;
+  
+}
+
+
+.profile-button {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc; /* Add a bottom border */
+  padding-bottom: 10px; /* Add some padding to separate the line from the content */
+  
+}
+
+.sidebar-divider{
+  width: 100%;
+  height: 1px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  /* border-top: 1px solid #ccc;  */
+
+
+}
+
+
+.sidebar-foot{
+ 
+  padding-left: 15px;
+  padding-top: calc(100vh - 445px);
+  font-family: 'Inter', sans-serif;
+ 
+}
+.sidebar-foot svg{
+  margin-right: 5px;
+  vertical-align: middle;
+  color: grey;
+ 
+   }
+
+
+.main-div{
+  display: flex;
+  top: 90px;
+  left: calc(15vw + 10px);
+  bottom: 400px;
+  right:10px;
+  position: absolute;
+
+}
+
+.div-greeting{
+  padding-left: 20px;
+  font-size: 22px;
+}
+
+.main-card{
+  height:calc(100vh - -500px);
+  left: 19vw;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+
+.flex-container , .flex-container-2, .flex-container-3,.flex-container-4{
+  display: flex;
+  margin-right: 20px;
+  margin-top: 20px;
+
+}
+
+.div-task , .div-linechart, .div-piechart, .div-meeting {
+  width: 45vw;
+  height: calc(48vh - 100px);
+  border-radius: 12px;
+  box-shadow: 2px 2px 2px 2px rgba(59, 58, 1, 0.233);
+  margin-left: 20px;
+}
+  
+  .div-table{
+    width: 69vw;
+    /* Adjust width of each card */
+    height: calc(100vh - 500px);
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px 2px rgba(59, 58, 1, 0.233);
+    margin-top: 40px;
+    padding: 70px;
+   
+  
+  }
+  .lead-table {
+    width: 80%;
+    border-collapse: collapse; 
+    border: 1px solid #0e0d0d
+    /* border-collapse: collapse; */
+  }
+  .lead-table th,
+  .lead-table td {
+    padding: 10px; /* Adjust cell padding for spacing */
+    text-align: center; /* Center-align text in cells */
+    border: 1px solid #000000; /* Add borders for cells */
+  }
+  
+  .lead-table tbody tr:last-child td {
+    border-bottom: 1px solid #000000;
+  
+  
+  }
+  
+  
+  
+  
+  
+
+
+.div-lead,.div-revenue,.div-pipeline{
+  width: calc(85vw - 100px);
+  height: calc(30vh - 100px);
+  border-radius: 12px;
+  box-shadow: 2px 2px 2px 2px rgba(59, 58, 1, 0.233);
+  margin-left: 20px;
+}
+
+.task0 {
+padding-left: 20px;
+padding-top: 20px;
+}
+
+.dot-div {
+  /* Styles for the container div wrapping the tasks */
+}
+
+.task1,
+.task2,
+.task3,
+.task4 {
+padding:2px;
+padding-left: 20px;
+}
+
+.img {
+  margin-right: 10px; /* Adjust the value as needed */
+  
+}
+/* line.css */
+
+.ResponsiveContainer {
+  width: 100%; /* Set the width to 100% */
+  height: 200px; /* Set the height to 200px */
+}
+
+.line-main{
+  padding-left: 40px;
+  position:fixed;
+  
+
+  
+}
+.div-linechart .recharts-responsive-container {
+  
+  padding-bottom: 90px; /* Adjust as needed */
+  margin-left:50px;
+  
+  
+}
+
+/* Hide the X-axis */
+.div-linechart .recharts-cartesian-axis-x line {
+  display: none;
+}
+.linechart-container {
+  padding:5px;
+}
+
+.linechart-cell {
+  /* Styles for the cell containing the line chart */
+}
+/* meet css */
+
+.div-meeting {
+  /* Styles for the container div */
+}
+
+.meet0 {
+  padding-left: 20px;
+  padding-top: 20px;
+
+}
+
+.div-meet1,
+.div-meet2,
+.div-meet3,
+.div-meet4 {
+  padding:2px;
+  padding-left: 20px;  
+  margin-right: 5px; 
+}
+
+/* You can style the SVG icons if needed */
+.div-meeting svg {
+  vertical-align: middle; /* Adjust vertical alignment of the SVG */
+  margin-right: 5px; /* Add margin to the right of the SVG icon */
+}
+
+.line-main{
+  padding-left: 20px;
+  padding-top: 20px;
+  position: fixed;
+}
+ .side-part{
+  font-size:20px;
+  font-weight:600;
+  color: rgb(32, 177, 32);
+ }
+
+  .side-part-2{
+    font-size:20px;
+    font-weight:600;
+    color: rgb(192, 5, 5);
+  
+
+
+ }
+ .side-part svg{
+  margin-right: 5px;
+  vertical-align: middle;
+ }
+
+
+
+ /* piechart css */
+ .pie-main{
+
+  padding-top: 10px;
+  padding-left: 10px;
+  
+  
+
+ }
+
+
+.piechart-cell{
+width: 60%;
+}
+
+ .piechart-container {
+ 
+
+ display:flex ;
+ 
+
+}
+.piechart-cell .recharts-pie-sector {
+  stroke-width: 1px; /* Set stroke width for better visibility of cell edges */
+  stroke-linejoin: round; /* Apply round line joins for smoother curves */
+  border-radius: 60px;
+  
+ 
+}
+.pie-line
+{
+  width: 40%;
+
+}
+.piechart-container{
+  display:flex;
+  
+}
+.pie-cir{
+  display:flex;
+}
+
+.table {
+  width: calc(85vw - 100px);
+  
+
+  border-radius:1px;
+}
+.table th {
+  padding: 20px; /* Adjust the padding as needed */
+  border:5px;
+}
+
+/* Apply padding to table data cells */
+.table td {
+  padding: 20px; /* Adjust the padding as needed */
+  border:1px;
+}
+
+.wrt{
+  display: flex;
+  padding-left: 10px;
+  padding-right:10px;
+  padding-top:10px;
+  justify-content: space-between;
+  
+}
+
+.lead-value{
+  padding-top:20px;
+  padding-left: 20px;
+  font-size:20px;
+  font-weight:600;
+  color: rgb(32, 177, 32);
+  justify-content: space-between;
+}
+.revenue-value{
+  padding-top:10px;                          
+  padding-left: 10px;
+  font-size:20px;
+  font-weight:650;
+  color: rgb(192, 5, 5);
+}
+.pipe-value{
+  padding-top:20px;
+  padding-left: 20px;
+  font-size:20px;
+  font-weight:600;
+  color: rgb(43, 66, 43);
+}
+
+.label-1{
+  background-color: #7E64F1;
+  color:#7E64F1;
+  width: 100px;
+  height:20px;
+  border-radius: 30px;
+  
+  
+
+}
+.label-2{
+  background-color: #13dfee;
+  color:#7E64F1;
+  width: 70px;
+  height:20px;
+  border-radius: 30px;
+  
+
+}
+
+.label-3{
+  background-color: #eeff04;
+  color:#eeff04;
+  width: 40px;
+  height:20px;
+ 
+  border-radius: 30px;
+  
+
+}
+.cir-1{
+  background-color: #7E64F1;
+  color:#eeff04;
+  width: 15px;
+  height:15px;
+ 
+  border-radius: 30px;
+  
+
+}
+.cir-2{
+  background-color: #13dfee;
+  color:#eeff04;
+  width: 15px;
+  height:15px;
+ 
+  border-radius: 30px;
+  
+
+}
+
+.cir-3{
+  background-color: #eeff04;
+  color:#eeff04;
+  width: 15px;
+  height:15px;
+ 
+  border-radius: 30px;
+  
+
+}
+.meeting-table {
+  width: 100vw; /* Adjusted for responsiveness */
+  max-width:1000px; /* Limiting width for larger screens */
+  margin: 40px auto; /* Center align the table */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  background-color: #ffffff; /* White background */
+  
+}
+
+/* Styling for the table itself */
+.meeting-table table {
+  width: 100%; /* Occupy full width of the container */
+  border-collapse: collapse; /* Remove default table spacing */
+}
+
+/* Styling for table header and cells */
+.meeting-table th {
+  padding: 18px; /* Adjusted cell padding */
+  text-align: center; /* Center-align text in cells */
+  border: 0.5px solid #e7e4e4; /* Light gray border */
+  
+}
+.meeting-table td {
+  padding: 24px; /* Adjusted cell padding */
+  text-align: center; /* Center-align text in cells */
+  border: 0.5px solid #e7e4e4; /* Light gray border */
+  
+}
+
+/* Background color for even rows */
+.meeting-table tr:nth-child(even) {
+  background-color: #ffffff; /* Light gray background */
+}
+
+/* Hover effect for rows */
+
+
+.button-meeting{
+  width: 7vw;
+  background-color: #7E64F1;
+  color:white;
+  box-shadow: 2px 2px 2px 2px rgba(59, 58, 1, 0.233);
+
+
+}
+
+.button-meeting-2{
+  width: 6vw;
+  background-color: #ffffff;
+  color:black;
+  box-shadow: 2px 2px 2px 2px rgba(59, 58, 1, 0.233);
+}
+
+.meeting-right{
+  display: flex;
+  align-items: center;
+  padding-left: 950px;
+  border-radius: 30px;
+
+}
+
+.drop-meeting{
+  width: 10vw;
+
+  margin-left: 1190px;
+  
+}
+.calls-head{
+  margin-left: 300px;
+}
+
+.task-page{
+  overflow-y:auto;
+}
+.task-table {
+  width: 100vw; /* Adjusted for responsiveness */
+  max-width:1000px; /* Limiting width for larger screens */
+  margin: 40px auto; /* Center align the table */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  background-color: #ffffff; /* White background */
+  
+}
+
+/* Styling for the table itself */
+.task-table table {
+  width: 100%; /* Occupy full width of the container */
+  border-collapse: collapse; /* Remove default table spacing */
+}
+
+/* Styling for table header and cells */
+.task-table th {
+  padding: 18px; /* Adjusted cell padding */
+  text-align: center; /* Center-align text in cells */
+  border: 0.5px solid #e7e4e4; /* Light gray border */
+  
+}
+.task-table td {
+  padding: 24px; /* Adjusted cell padding */
+  text-align: center; /* Center-align text in cells */
+  border: 0.5px solid #e7e4e4; /* Light gray border */
+  
+}
+
+/* Background color for even rows */
+.task-table tr:nth-child(even) {
+  background-color: #ffffff; /* Light gray background */
+}

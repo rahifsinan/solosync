@@ -252,9 +252,6 @@
 
 .sidebar-list-item:hover {
   background-color: #BFAAFF;
-  padding-left: 2px;
-  padding-right: 5px;
-  cursor:auto;
   color: #7E64F1;
 }
 
@@ -338,7 +335,7 @@
 }
 
 
-.flex-container , .flex-container-2, .flex-container-3,.flex-container-4{
+.flex-container , .flex-container-2, .flex-container-3,.flex-container-4,.flex-container-5{
   display: flex;
   margin-right: 20px;
   margin-top: 20px;
@@ -657,40 +654,36 @@ width: 60%;
 
 }
 .meeting-table {
-  width: 100vw; /* Adjusted for responsiveness */
-  max-width:1000px; /* Limiting width for larger screens */
-  margin: 40px auto; /* Center align the table */
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
-  background-color: #ffffff; /* White background */
-  
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly elevated box shadow */
+  background-color: #f8f9fa;
 }
 
-/* Styling for the table itself */
 .meeting-table table {
-  width: 100%; /* Occupy full width of the container */
-  border-collapse: collapse; /* Remove default table spacing */
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #000000;
 }
 
-/* Styling for table header and cells */
-.meeting-table th {
-  padding: 18px; /* Adjusted cell padding */
-  text-align: center; /* Center-align text in cells */
-  border: 0.5px solid #e7e4e4; /* Light gray border */
-  
-}
+.meeting-table th,
 .meeting-table td {
-  padding: 24px; /* Adjusted cell padding */
-  text-align: center; /* Center-align text in cells */
-  border: 0.5px solid #e7e4e4; /* Light gray border */
-  
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #b8b6b6; /* No border by default */
 }
 
-/* Background color for even rows */
-.meeting-table tr:nth-child(even) {
-  background-color: #ffffff; /* Light gray background */
+.meeting-table td {
+  background-color: #ffffff;
 }
+
+.meeting-table tr:nth-child(even) td {
+  background-color: #f8f9fa;
+}
+
 
 /* Hover effect for rows */
 
@@ -767,3 +760,23 @@ width: 60%;
 .task-table tr:nth-child(even) {
   background-color: #ffffff; /* Light gray background */
 }
+
+.analytic-donut{
+  width: calc(35vw - 100px);
+  height: calc(44vh - 100px);
+  border-radius: 12px;
+  box-shadow: 2px 2px 2px 2px rgba(59, 58, 1, 0.233);
+  margin-left: 20px;
+}
+
+
+.bar-chart{
+  width: calc(35vw - 100px);
+  height: calc(44vh - 100px);
+  border-radius: 12px;
+  box-shadow: 2px 2px 2px 2px rgba(59, 58, 1, 0.233);
+  margin-left: 20px;
+}
+
+
+

@@ -48,7 +48,7 @@ function MeetingsTable() {
 </svg>
 
 </div>
-      <table className='task-table'>
+      <table className='meeting-table'>
         <thead>
           <tr>
             <th>Subject&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 32 32">

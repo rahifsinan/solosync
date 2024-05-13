@@ -456,7 +456,7 @@ padding-left: 20px;
 
 .meet0 {
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
 
 }
 
@@ -660,7 +660,7 @@ width: 60%;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly elevated box shadow */
-  background-color: #f8f9fa;
+  background-color: #ffffff;
 }
 
 .meeting-table table {
@@ -669,20 +669,33 @@ width: 60%;
   border: 1px solid #000000;
 }
 
-.meeting-table th,
-.meeting-table td {
-  padding: 12px;
+.meeting-table th
+{
+  padding: 8px;
   text-align: center;
-  border: 1px solid #b8b6b6; /* No border by default */
+  border: 1px solid #eeecec; /* No border by default */
 }
 
 .meeting-table td {
-  background-color: #ffffff;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #eeecec; /* No border by default */
 }
 
-.meeting-table tr:nth-child(even) td {
-  background-color: #f8f9fa;
+.meeting-table td {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  
+  white-space: nowrap;
+  text-align: center;
 }
+
+
+.meeting-table th:not(:last-child) {
+  border-right: none;
+}
+
 
 
 /* Hover effect for rows */
@@ -722,48 +735,11 @@ width: 60%;
   margin-left: 300px;
 }
 
-.task-page{
-  overflow-y:auto;
-}
-.task-table {
-  width: 100vw; /* Adjusted for responsiveness */
-  max-width:1000px; /* Limiting width for larger screens */
-  margin: 40px auto; /* Center align the table */
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
-  background-color: #ffffff; /* White background */
-  
-}
 
-/* Styling for the table itself */
-.task-table table {
-  width: 100%; /* Occupy full width of the container */
-  border-collapse: collapse; /* Remove default table spacing */
-}
-
-/* Styling for table header and cells */
-.task-table th {
-  padding: 18px; /* Adjusted cell padding */
-  text-align: center; /* Center-align text in cells */
-  border: 0.5px solid #e7e4e4; /* Light gray border */
-  
-}
-.task-table td {
-  padding: 24px; /* Adjusted cell padding */
-  text-align: center; /* Center-align text in cells */
-  border: 0.5px solid #e7e4e4; /* Light gray border */
-  
-}
-
-/* Background color for even rows */
-.task-table tr:nth-child(even) {
-  background-color: #ffffff; /* Light gray background */
-}
 
 .analytic-donut{
   width: calc(35vw - 100px);
-  height: calc(44vh - 100px);
+  height: calc(46vh - 100px);
   border-radius: 12px;
   box-shadow: 2px 2px 2px 2px rgba(59, 58, 1, 0.233);
   margin-left: 20px;
@@ -771,8 +747,64 @@ width: 60%;
 
 
 .bar-chart{
-  width: calc(35vw - 100px);
+  width: calc(60vw - 100px);
   height: calc(44vh - 100px);
+  border-radius: 12px;
+  box-shadow: 2px 2px 2px 2px rgba(59, 58, 1, 0.233);
+  margin-left: 20px;
+}
+
+.note {
+  background-color: yellow;
+  padding: 10px;
+  margin: 10px;
+}
+
+.notes-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input {
+  margin-right: 10px;
+}
+
+.analytic-table{
+
+  width: calc(50vw - 100px);
+  height: calc(54vh - 100px);
+  border-radius: 12px;
+  box-shadow: 2px 2px 2px 2px rgba(59, 58, 1, 0.233);
+  margin-left: 20px;
+
+}
+
+
+.analytic-table th
+{
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #eeecec; /* No border by default */
+}
+
+.analytic-table td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #eeecec; /* No border by default */
+}
+
+.analytic-table td {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  background-color: #f0f0f0;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.analytic-pie{
+  width: calc(90vw - 100px);
+  height: calc(54vh - 100px);
   border-radius: 12px;
   box-shadow: 2px 2px 2px 2px rgba(59, 58, 1, 0.233);
   margin-left: 20px;

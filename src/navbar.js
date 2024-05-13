@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '@mui/material/Card';
-
+import { BrowserRouter as Link, } from "react-router-dom";
 import "./App.css"
 
 function CustomNavbar() {
@@ -16,11 +16,14 @@ function CustomNavbar() {
 	       <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21l-3.5-3.5M17 10a7 7 0 1 1-14 0a7 7 0 0 1 14 0Z" />
           </svg>
          </div>
+         
          <div className='nav-icon'>
+         <Link to="/note">
          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16">
 	             <path fill="currentColor" d="M5 1a.5.5 0 0 1 .5.5V2h2v-.5a.5.5 0 0 1 1 0V2h2v-.5a.5.5 0 0 1 1 0V2A1.5 1.5 0 0 1 13 3.5V10H9.5A1.5 1.5 0 0 0 8 11.5V15H4.5A1.5 1.5 0 0 1 3 13.5v-10A1.5 1.5 0 0 1 4.5 2v-.5A.5.5 0 0 1 5 1m.5 4.5A.5.5 0 0 0 6 6h4a.5.5 0 0 0 0-1H6a.5.5 0 0 0-.5.5m0 3A.5.5 0 0 0 6 9h4a.5.5 0 0 0 0-1H6a.5.5 0 0 0-.5.5m0 3a.5.5 0 0 0 .5.5h.5a.5.5 0 0 0 0-1H6a.5.5 0 0 0-.5.5M9 14.69q.077-.06.146-.13l3.415-3.414q.07-.07.128-.146H9.5a.5.5 0 0 0-.5.5z" />
-            </svg>
+            </svg></Link>
             </div>
+            
             <div className='nav-icon'>
          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="-2 -2 24 24">
 	        <path fill="currentColor" d="M11 11h4a1 1 0 0 0 0-2h-4V5a1 1 0 0 0-2 0v4H5a1 1 0 1 0 0 2h4v4a1 1 0 0 0 2 0zm-1 9C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10s-4.477 10-10 10" />

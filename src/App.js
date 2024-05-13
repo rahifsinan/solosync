@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Navbar from './navbar';
 import Header from './header';
 import Sidebar from './sidebar';
@@ -12,20 +12,21 @@ import Calls from "./calls";
 import Leads from "./leads";
 import Deals from "./deals";
 import Analytics from "./analytics";
+import Note from './note';
 
+// Define Note component separately
 
 function App() {
-  
+  // Assuming notes array is defined and initialized somewhere
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState('Home');
 
-  const openSidebar = () => {
-    setIsSidebarOpen(true);
-  };
-
-  const closeSidebar = () => {
-    setIsSidebarOpen(false);
-  };
+  // Dummy notes array for demonstration
+  const note = [
+    { id: 1, text: "Note 1" },
+    { id: 2, text: "Note 2" },
+    { id: 3, text: "Note 3" }
+  ];
 
   return (
     <div>
@@ -33,32 +34,35 @@ function App() {
       <Header selectedOption={selectedOption} />
       
       <Router>
-      <Sidebar />
+        <Sidebar />
         <div className="app-container">
           <ul className="App-header">
             <li>
-              <Link to="/"></Link>
+              <Link to="/home">Home</Link>
             </li>
             <li>
-              <Link to="/meetings"></Link>
+              <Link to="/meetings">Meetings</Link>
             </li>
             <li>
-              <Link to="/tasks"></Link>
+              <Link to="/tasks">Tasks</Link>
             </li>
             <li>
-              <Link to="/contacts"></Link>
+              <Link to="/contacts">Contacts</Link>
             </li>
             <li>
-              <Link to="/calls"></Link>
+              <Link to="/calls">Calls</Link>
             </li>
             <li>
-              <Link to="/leads"></Link>
+              <Link to="/leads">Leads</Link>
             </li>
             <li>
-              <Link to="/deals"></Link>
+              <Link to="/deals">Deals</Link>
             </li>
             <li>
-              <Link to="/analytics"></Link>
+              <Link to="/analytics">Analytics</Link>
+            </li>
+            <li>
+              <Link to="/note">Note</Link>
             </li>
           </ul>
           <Routes>
@@ -70,6 +74,7 @@ function App() {
             <Route path="/leads" element={<Leads />} />
             <Route path="/deals" element={<Deals />} />
             <Route path="/analytics" element={<Analytics />} />
+            <Route path="/note" element={<Note />} />
           </Routes>
         </div>
       </Router>

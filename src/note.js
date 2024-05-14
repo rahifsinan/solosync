@@ -24,7 +24,7 @@ const StickyNotes = () => {
           value={inputText}
           onChange={(e) => setInputText(e.target.value)}
         />
-        <button onClick={addNote}>Add Note</button>
+        
       </div>
 
     </div>

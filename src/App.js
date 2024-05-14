@@ -13,6 +13,7 @@ import Leads from "./leads";
 import Deals from "./deals";
 import Analytics from "./analytics";
 import Note from './note';
+import Addtask from './addtask'
 
 // Define Note component separately
 
@@ -62,7 +63,13 @@ function App() {
               <Link to="/analytics">Analytics</Link>
             </li>
             <li>
-              <Link to="/note">Note</Link>
+              <Link to="/addNote">Note</Link>
+            </li>
+            <li>
+              <Link to="/">Note</Link>
+            </li>
+            <li>
+              <Link to="/addtask"></Link>
             </li>
           </ul>
           <Routes>
@@ -74,7 +81,8 @@ function App() {
             <Route path="/leads" element={<Leads />} />
             <Route path="/deals" element={<Deals />} />
             <Route path="/analytics" element={<Analytics />} />
-            <Route path="/note" element={<Note />} />
+            <Route path="/addnote" element={<Note />} />
+            <Route path="/addtask" element={<Addtask />} />
           </Routes>
         </div>
       </Router>

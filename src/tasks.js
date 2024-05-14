@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from "react-bootstrap";
+import { BrowserRouter as Router, Routes, Route, Link, } from "react-router-dom";
 
 function MeetingsTable() {
   const Tasks = [
@@ -21,8 +22,8 @@ function MeetingsTable() {
 </svg>  Tasks 
         </div>
         
-        <div className='meeting-right'>  
-        <button className="button-meeting">+ &nbsp;&nbsp;&nbsp;&nbsp;Add Task</button>
+        <div className='meeting-right'> <Link to="/addtask">
+        <button className="button-meeting">+ &nbsp;&nbsp;&nbsp;&nbsp;Add Task</button></Link>
         &nbsp;&nbsp;&nbsp;
         <select className='action-meeting'>
 

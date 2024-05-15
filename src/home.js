@@ -208,19 +208,19 @@ const App = () => {
                
               </div>
               <div className="pie-line">
-                <div className="label-1">&nbsp;</div>
+                <div className="label-1">&nbsp;</div>55%
                 <br />
-                <div className="label-2">&nbsp;</div>
+                <div className="label-2">&nbsp;</div>36.6%
                 <br />
-                <div className="label-3">&nbsp;</div>
+                <div className="label-3">&nbsp;</div>9.06
                 <br/><br/><br/><br/><br/>
 
                 <div className="pie-cir">
-                <div className="cir-1">&nbsp;</div>
+                <div className="cir-1">&nbsp;</div>Contacts
                 &nbsp;&nbsp;
-                <div className="cir-2">&nbsp;</div>
+                <div className="cir-2">&nbsp;</div>Leads
                 &nbsp;&nbsp;
-                <div className="cir-3">&nbsp;</div>
+                <div className="cir-3">&nbsp;</div>Deals
                 
                 </div>
 

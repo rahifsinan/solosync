@@ -37,11 +37,11 @@
 }
 
 
-.search-box input[type="text"] {
+.search-box input[type="search-text"] {
   border: none;
   background-color: transparent;
   color: white;
-  padding: 5px;
+  padding: 9px;
   margin-left: 10px; /* Adjust spacing */
 }
 
@@ -362,22 +362,48 @@
   
   }
   .lead-table {
-    width: 80%;
-    border-collapse: collapse; 
-    border: 1px solid #0e0d0d
-    /* border-collapse: collapse; */
+    width: 100%;
+    max-width: 800px;
+    
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly elevated box shadow */
+    background-color: #ffffff;
   }
-  .lead-table th,
+  
+  .lead-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #000000;
+  }
+  
+  .lead-table th
+  {
+    font-family:sans-serif;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #eeecec; /* No border by default */
+  }
+  
   .lead-table td {
-    padding: 10px; /* Adjust cell padding for spacing */
-    text-align: center; /* Center-align text in cells */
-    border: 1px solid #000000; /* Add borders for cells */
+    font-family:sans-serif;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #eeecec; /* No border by default */
   }
   
-  .lead-table tbody tr:last-child td {
-    border-bottom: 1px solid #000000;
+  .lead-table td {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    
+    white-space: nowrap;
+    text-align: center;
+  }
   
   
+  .lead-table th:not(:last-child) {
+    border-right: none;
   }
   
   
@@ -613,7 +639,7 @@ width: 60%;
 }
 
 .label-3{
-  background-color: #eeff04;
+  background-color: #d6d30b;
   color:#eeff04;
   width: 40px;
   height:20px;
@@ -644,8 +670,8 @@ width: 60%;
 }
 
 .cir-3{
-  background-color: #eeff04;
-  color:#eeff04;
+  background-color: #d6d30b;
+  color:#13dfee;
   width: 15px;
   height:15px;
  
@@ -671,12 +697,14 @@ width: 60%;
 
 .meeting-table th
 {
-  padding: 8px;
+  font-family:sans-serif;
+  padding: 10px;
   text-align: center;
   border: 1px solid #eeecec; /* No border by default */
 }
 
 .meeting-table td {
+  font-family:sans-serif;
   padding: 8px;
   text-align: center;
   border: 1px solid #eeecec; /* No border by default */
@@ -736,6 +764,15 @@ width: 60%;
 
 .task-button2{
   width: 9vw;
+  background-color: #ffffff;
+  color:black;
+  box-shadow: 2px 2px 2px 2px rgba(59, 58, 1, 0.233);
+
+
+}
+
+.task-button3{
+  width: 5vw;
   background-color: #ffffff;
   color:black;
   box-shadow: 2px 2px 2px 2px rgba(59, 58, 1, 0.233);
@@ -849,7 +886,7 @@ input {
 /* It containds the Form and Page Styling*/
 
 body {
-  background: #f3f3f3;
+  background: #d2d2d2;
   
 }
 .task-form {
@@ -857,6 +894,7 @@ body {
   width: calc(73vw - 100px);
   text-align: center;
   margin: auto;
+  border: none;
   margin-top: 20px;
 }
 
@@ -868,12 +906,13 @@ body {
 
 label {
   font-size: 15px;
-  display: block;
+  font-family:sans-serif;
+  border: none;
   width: 100%;
   margin-top: 8px;
   margin-bottom: 5px;
   text-align: left;
-  color: #555;
+  
   font-weight: bold;
 }
 
@@ -881,7 +920,7 @@ label {
 input[type="text"], 
 input[type="email"], 
 input[type="tel"] {
-    width: 300px;
+    width: 800px;
     height:5px;
     padding: 10px;
     margin: 10px 0;
@@ -914,12 +953,7 @@ input[type="tel"]::placeholder {
 }
 
 /* Style for better visibility of labels or other elements */
-label {
-    display: block;
-    margin: 5px 0;
-    font-size: 12px;
-    color: #333;
-}
+
 
 
 

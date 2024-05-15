@@ -61,25 +61,14 @@ function App() {
     };
 
     return (
-        <div className='task-page'> 
+        <div className='task-page'>
         <div className="task-form">
-        <div className="task-align">
-        <h2>Add New Task</h2>
-        <div className='task-right'> <Link to="/addtask">
-            
-        <button className="task-button">Save</button></Link>&nbsp;&nbsp;&nbsp;
-        <Link to="/addtask">
-        <button className="task-button2">Save & Add another</button></Link>
-        &nbsp;&nbsp;&nbsp;
-        <button className="task-button3">Cancel</button>
+     
         
-        
-</div>
-         </div>
             
             
             <div className="task-align">
-            <h3>Task Information</h3>
+            <h3>Meeting Information</h3>
             </div>
                 <form action="#" method="get">
                     <input
@@ -90,7 +79,7 @@ function App() {
                         onChange={(e) =>
                             setFirstName(e.target.value)
                         }
-                        placeholder="Subject"
+                        placeholder="New Meeting"
                         required
                     />
                     <br/>
@@ -102,7 +91,7 @@ function App() {
                         onChange={(e) =>
                             setLastName(e.target.value)
                         }
-                        placeholder="Due Date"
+                        placeholder="Location"
                         required
                     />
                     <br/>
@@ -115,7 +104,7 @@ function App() {
                         onChange={(e) =>
                             setEmail(e.target.value)
                         }
-                        placeholder="Contact"
+                        placeholder="From"
                         required
                     />
                     <br/>
@@ -128,7 +117,7 @@ function App() {
                         onChange={(e) =>
                             setContact(e.target.value)
                         }
-                        placeholder="Status"
+                        placeholder="To"
                         required
                     />
                     
@@ -143,12 +132,22 @@ function App() {
                         onChange={(e) =>
                             setContact(e.target.value)
                         }
-                        placeholder="Reminder"
+                        placeholder="Host"
                         required
                     />
-            <div className="task-align">
-            <h3>Description Information</h3>
-            </div>
+                     <br/>
+                  
+                  <input
+                      type="tel"
+                      name="contact"
+                      id="contact"
+                      value={contact}
+                      onChange={(e) =>
+                          setContact(e.target.value)
+                      }
+                      placeholder="Participants"
+                      required
+                  />
             <input
                         type="tel"
                         name="contact"
@@ -159,7 +158,15 @@ function App() {
                         }
                         placeholder="Description"
                         required
-                    />
+                    /><br/><br/>
+             <div className='task-right'>
+             <button className="task-button3">Cancel</button>&nbsp;&nbsp;&nbsp;
+              <Link to="/addmeetings">
+            <button className="task-button">Save</button></Link>&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
+            
+            </div>
+            
                     
                     
 

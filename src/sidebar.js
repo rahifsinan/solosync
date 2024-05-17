@@ -1,5 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, } from "react-router-dom";
+const handleItemClick = (route) => {
+    window.location.href = route; // Navigate to the specified route
+};
 export const Sidebar = ({ isOpen, closeSidebar }) => {
     
     
@@ -19,7 +22,7 @@ export const Sidebar = ({ isOpen, closeSidebar }) => {
         </div>
 
         <ul className='sidebar-list'>
-            <li className='sidebar-list-item '>
+        <li className='sidebar-list-item' onClick={() => handleItemClick('/home')}>
             
             <Link to="/home">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">

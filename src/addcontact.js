@@ -82,90 +82,62 @@ function App() {
             <h3>Contact Image</h3>         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
 	       <path fill="currentColor" fill-rule="evenodd" d="M12 4a8 8 0 0 0-6.96 11.947A4.99 4.99 0 0 1 9 14h6a4.99 4.99 0 0 1 3.96 1.947A8 8 0 0 0 12 4m7.943 14.076A9.959 9.959 0 0 0 22 12c0-5.523-4.477-10-10-10S2 6.477 2 12a9.958 9.958 0 0 0 2.057 6.076l-.005.018l.355.413A9.98 9.98 0 0 0 12 22a9.947 9.947 0 0 0 5.675-1.765a10.055 10.055 0 0 0 1.918-1.728l.355-.413zM12 6a3 3 0 1 0 0 6a3 3 0 0 0 0-6" clip-rule="evenodd" />
          </svg>
-            </div><br/><br/>
-                <form action="#" method="get">
-                    <input
-                        type="text"
-                        name="firstname"
-                        id="firstname"
-                        value={firstName}
-                        onChange={(e) =>
-                            setFirstName(e.target.value)
-                        }
-                        placeholder="Subject"
-                        required
-                    />
-                    <br/>
-                    <input
-                        type="text"
-                        name="lastname"
-                        id="lastname"
-                        value={lastName}
-                        onChange={(e) =>
-                            setLastName(e.target.value)
-                        }
-                        placeholder="Due Date"
-                        required
-                    />
-                    <br/>
-                    
-                    <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        value={email}
-                        onChange={(e) =>
-                            setEmail(e.target.value)
-                        }
-                        placeholder="Contact"
-                        required
-                    />
-                    <br/>
-                  
-                    <input
-                        type="tel"
-                        name="contact"
-                        id="contact"
-                        value={contact}
-                        onChange={(e) =>
-                            setContact(e.target.value)
-                        }
-                        placeholder="Status"
-                        required
-                    />
-                    
-                    
-                    <br/>
-                  
-                    <input
-                        type="tel"
-                        name="contact"
-                        id="contact"
-                        value={contact}
-                        onChange={(e) =>
-                            setContact(e.target.value)
-                        }
-                        placeholder="Reminder"
-                        required
-                    />
-            <div className="task-align">
-            <h3>Description Information</h3>
-            </div>
-            <input
-                        type="tel"
-                        name="contact"
-                        id="contact"
-                        value={contact}
-                        onChange={(e) =>
-                            setContact(e.target.value)
-                        }
-                        placeholder="Description"
-                        required
-                    />
-                    
-                    
-
-                </form>
+            </div><br/><div className="task-align"><h3>Contact Information</h3></div><br/>
+            <form action="#"> 
+                <div className="flex flex-row"> 
+                    <div className="w-1/2 pr-2 "> 
+                        <label for="firstName" 
+                               className="block my-2 text-left  
+                                          text-sm font-medium text-gray-900"> 
+                            First Name 
+                        </label> 
+                        <input type="contact-text" 
+                               className="shadow-sm bg-gray-50 border 
+                                          border-gray-300 text-gray-900  
+                                          text-sm rounded-lg block w-full p-2.5" 
+                               placeholder="Enter First Name"
+                               required/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="firstName" 
+                               className="block my-2 text-left text-sm  
+                                          font-medium text-gray-900"> 
+                            Last Name 
+                        </label> 
+                        <input type="contact-text" 
+                               className="shadow-sm bg-gray-50 border  
+                                          border-gray-300 text-gray-900  
+                                          text-sm rounded-lg block w-full p-2.5"
+                               placeholder="Enter Last Name"/> 
+                    </div> 
+                </div> 
+                <div> 
+                    <label for="email" 
+                           className="block my-2 text-left text-sm  
+                                      font-medium text-gray-900"> 
+                        Your email 
+                    </label> 
+                    <input type="contact-email" 
+                           className="shadow-sm bg-gray-50 border  
+                                      border-gray-300 text-gray-900  
+                                      text-sm rounded-lg block w-full p-2.5" 
+                           placeholder="abc@geeksforgeeks.org" 
+                           required /> 
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                    <label for="subject" 
+                           className="block my-2 text-left  
+                                      text-sm font-medium text-gray-900"> 
+                        Subject 
+                    </label> 
+                    <input type="contact-text" 
+                           className="block p-3 w-full text-sm  
+                                      text-gray-900 bg-gray-50 rounded-lg  
+                                      border border-gray-300 shadow-sm "
+                           placeholder="What issue/suggestion do you have?" 
+                           required /> 
+                </div> 
+                 
+            </form>
         </div>
         </div>
     );

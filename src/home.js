@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route, Link, } from "react-router-dom";
+
 import Card from "@mui/material/Card";
 import {
   LineChart,
@@ -236,7 +238,7 @@ const App = () => {
               <div className="meet0">Upcoming meetings</div>
               <br />
               <br />
-
+              <Link to="/meetingdetails">
               <div className="div-meet1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -252,6 +254,7 @@ const App = () => {
                 </svg>{" "}
                 Meeting 1
               </div>
+              </Link>
               <div className="div-meet1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -259,6 +262,7 @@ const App = () => {
                   height="15"
                   viewBox="0 0 24 24"
                 >
+                  
                   <path
                     fill="none"
                     stroke="currentColor"

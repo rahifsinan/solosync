@@ -1,6 +1,7 @@
 import "./App.css";
 import { React, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link, } from "react-router-dom";
+import profileImage from './assets/Profile.jpg';
 
 function App() {
     const [firstName, setFirstName] = useState("");
@@ -79,9 +80,11 @@ function App() {
             
             
             <div className="task-align">
-            <h3>Contact Image</h3>         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
-	       <path fill="currentColor" fill-rule="evenodd" d="M12 4a8 8 0 0 0-6.96 11.947A4.99 4.99 0 0 1 9 14h6a4.99 4.99 0 0 1 3.96 1.947A8 8 0 0 0 12 4m7.943 14.076A9.959 9.959 0 0 0 22 12c0-5.523-4.477-10-10-10S2 6.477 2 12a9.958 9.958 0 0 0 2.057 6.076l-.005.018l.355.413A9.98 9.98 0 0 0 12 22a9.947 9.947 0 0 0 5.675-1.765a10.055 10.055 0 0 0 1.918-1.728l.355-.413zM12 6a3 3 0 1 0 0 6a3 3 0 0 0 0-6" clip-rule="evenodd" />
-         </svg>
+            <h3>Contact Image</h3>
+            <div className="profile-container">
+                <img className="profile-image" src={profileImage} alt="Profile" />
+                </div>
+                
             </div><br/><div className="task-align"><h3>Contact Information</h3></div><br/>
             <form action="#"> 
                 <div className="flex flex-row"> 
@@ -175,7 +178,7 @@ function App() {
                                       border-gray-300 text-gray-900  
                                       text-sm rounded-lg block w-full p-2.5" 
                            
-                           required placeholder="DD/MM/YYYY"/> 
+                           required /> 
                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 
                     <label for="subject" 
@@ -231,7 +234,7 @@ function App() {
                                       border-gray-300 text-gray-900  
                                       text-sm rounded-lg block w-full p-2.5" 
                            
-                           required placeholder="DD/MM/YYYY"/> 
+                           required /> 
                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 
                     <label for="subject" 
@@ -287,7 +290,7 @@ function App() {
                                       border-gray-300 text-gray-900  
                                       text-sm rounded-lg block w-full p-2.5" 
                            
-                           required placeholder="DD/MM/YYYY"/> 
+                           required /> 
                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 
                     <label for="subject" 
@@ -315,13 +318,14 @@ function App() {
                                       border-gray-300 text-gray-900  
                                       text-sm rounded-lg block w-full p-2.5" 
                            
-                           required placeholder="DD/MM/YYYY"/> </div>
+                           required/> </div>
                 
                 
                  
             </form>
         </div>
         </div>
+        
     );
 }
 

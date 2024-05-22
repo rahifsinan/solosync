@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from "react-bootstrap";
+import { Button,Card} from "react-bootstrap";
 import { BrowserRouter as Router, Routes, Route, Link, } from "react-router-dom";
 
 function MeetingsTable() {
@@ -22,40 +22,35 @@ function MeetingsTable() {
 </svg>  Tasks 
         </div>
         
-        <div className='meeting-right'> <Link to="/addtask">
-          
-        <button className="button-meeting">+ &nbsp;&nbsp;&nbsp;&nbsp;Add Task</button></Link>
-        &nbsp;&nbsp;&nbsp;
-        <select className='action-meeting'>
-
-<option label="Action"></option>
-<option>Add</option>
-<option>Delete</option></select>
-         </div>
+        <div className='meeting-right'>
+            <Link to="/addtask">
+              <button className="button-meeting">+ &nbsp;&nbsp;&nbsp;&nbsp;Add Task</button>
+            </Link>
+            &nbsp;&nbsp;&nbsp;
+            <select className='action-meeting'>
+              <option label="Action"></option>
+              <option>Add</option>
+              <option>Delete</option>
+            </select>
+          </div>
         </div>
-        </header>
-        <div className="scrollable-container">
+      </header>
+      <div className="scrollable-container">
         <div className="main-div">
-        <div className='menu-icon'>
+          <Card className="main-card">
+            <div className='menu-icon'>
               <div className='header-left'>
-          
-
-<select className='drop-meeting'>
-
-  <option value="pages">10 Records Per Page</option>
-
-  
-
-</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 15 15">
-	<path fill="currentColor" fill-rule="evenodd" d="M8.818 4.182a.45.45 0 0 1 0 .636L6.136 7.5l2.682 2.682a.45.45 0 1 1-.636.636l-3-3a.45.45 0 0 1 0-.636l3-3a.45.45 0 0 1 .636 0" clip-rule="evenodd" />
-</svg>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 15 15">
-	<path fill="currentColor" fill-rule="evenodd" d="M6.182 4.182a.45.45 0 0 1 .636 0l3 3a.45.45 0 0 1 0 .636l-3 3a.45.45 0 1 1-.636-.636L8.864 7.5L6.182 4.818a.45.45 0 0 1 0-.636" clip-rule="evenodd" />
-</svg>
-</div>
-</div>
-
-</div>
+                <select className='drop-meeting'>
+                  <option value="pages">10 Records Per Page</option>
+                </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 15 15">
+                  <path fill="currentColor" fillRule="evenodd" d="M8.818 4.182a.45.45 0 0 1 0 .636L6.136 7.5l2.682 2.682a.45.45 0 1 1-.636.636l-3-3a.45.45 0 0 1 0-.636l3-3a.45.45 0 0 1 .636 0" clipRule="evenodd" />
+                </svg>&nbsp;
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 15 15">
+                  <path fill="currentColor" fillRule="evenodd" d="M6.182 4.182a.45.45 0 0 1 .636 0l3 3a.45.45 0 0 1 0 .636l-3 3a.45.45 0 1 1-.636-.636L8.864 7.5L6.182 4.818a.45.45 0 0 1 0-.636" clipRule="evenodd" />
+                </svg>
+              </div>
+            </div>
 
       <table className='meeting-table'>
         <thead>
@@ -91,7 +86,8 @@ function MeetingsTable() {
           ))}
         </tbody>
       </table>
-      
+      </Card>
+    </div>
     </div>
     </div>
     

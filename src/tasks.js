@@ -34,7 +34,11 @@ function MeetingsTable() {
          </div>
         </div>
         </header>
-        <div>
+        <div className="scrollable-container">
+        <div className="main-div">
+        <div className='menu-icon'>
+              <div className='header-left'>
+          
 
 <select className='drop-meeting'>
 
@@ -48,8 +52,11 @@ function MeetingsTable() {
 </svg>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 15 15">
 	<path fill="currentColor" fill-rule="evenodd" d="M6.182 4.182a.45.45 0 0 1 .636 0l3 3a.45.45 0 0 1 0 .636l-3 3a.45.45 0 1 1-.636-.636L8.864 7.5L6.182 4.818a.45.45 0 0 1 0-.636" clip-rule="evenodd" />
 </svg>
+</div>
+</div>
 
 </div>
+
       <table className='meeting-table'>
         <thead>
           <tr>
@@ -84,7 +91,10 @@ function MeetingsTable() {
           ))}
         </tbody>
       </table>
+      
     </div>
+    </div>
+    
   );
 }
 

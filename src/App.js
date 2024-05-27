@@ -60,16 +60,16 @@ function App() {
               <Link to="/leads">Leads</Link>
             </li>
             <li>
-              <Link to="/deals">Deals</Link>
+              <Link to="/deals"></Link>
             </li>
             <li>
-              <Link to="/analytics">Analytics</Link>
+              <Link to="/analytics"></Link>
             </li>
             <li>
-              <Link to="/addNote">Note</Link>
+              <Link to="/addNote"></Link>
             </li>
             <li>
-              <Link to="/">Note</Link>
+              <Link to="/"></Link>
             </li>
             <li>
               <Link to="/addtask"></Link>

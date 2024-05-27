@@ -318,6 +318,7 @@
   bottom: 400px;
   right:10px;
   position: absolute;
+  
 
 }
 
@@ -332,6 +333,7 @@
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  
 }
 
 .meet-card{
@@ -695,49 +697,60 @@ width: 60%;
   height:15px;
  
   border-radius: 30px;
-  
 
 }
+
+
+
+
+
 .meeting-table {
-  width: 100%;
   max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
+  margin: 1px auto;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly elevated box shadow */
   background-color: #ffffff;
 }
 
 .meeting-table table {
-  width: 100%;
+  width: 89%;
+  padding: 80px;
   border-collapse: collapse;
   border: 1px solid #000000;
 }
 
-.meeting-table th
-{
-  font-family:sans-serif;
+.meeting-table th {
+  font-family: sans-serif;
   padding: 10px;
   text-align: center;
   border: 1px solid #eeecec; /* No border by default */
+  background-color: #d2d2d2; /* Green background for headers */
+   /* White text color for headers */
 }
 
 .meeting-table td {
-  font-family:sans-serif;
+  font-family: sans-serif;
   padding: 8px;
   text-align: center;
   border: 1px solid #eeecec; /* No border by default */
+  background-color: #f9f9f9; /* Light grey background for cells */
+}
+
+.meeting-table tr:nth-child(even) td {
+  background-color: #f2f2f2; /* Alternate row color */
+}
+
+.meeting-table tr:hover td {
+  background-color: #ddd; /* Background color on row hover */
 }
 
 .meeting-table td {
   border: none;
   border-bottom: 1px solid #ddd;
   position: relative;
-  
   white-space: nowrap;
   text-align: center;
 }
-
 
 .meeting-table th:not(:last-child) {
   border-right: none;
@@ -748,30 +761,61 @@ width: 60%;
 /* Hover effect for rows */
 
 
-.button-meeting{
-  width: 7vw;
-  background-color: #7E64F1;
-  color:white;
-  box-shadow: 2px 2px 2px 2px rgba(59, 58, 1, 0.233);
-
-
+.button-meeting {
+  width: 8vw;
+  height: 3.6vh;
+  background: linear-gradient(45deg, #7E64F1, #5A4EC6);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(59, 58, 1, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
 }
 
-.button-meeting-2{
+.button-meeting:hover {
+  transform: scale(1.05);
+  box-shadow: 3px 3px 8px rgba(59, 58, 1, 0.4);
+}
+
+.button-meeting-2 {
   width: 6vw;
-  background-color: #ffffff;
-  color:black;
-  box-shadow: 2px 2px 2px 2px rgba(59, 58, 1, 0.233);
+  background: linear-gradient(45deg, #ffffff, #E6E6E6);
+  color: black;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(59, 58, 1, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
 }
 
-.task-button{
+.button-meeting-2:hover {
+  transform: scale(1.05);
+  box-shadow: 3px 3px 8px rgba(59, 58, 1, 0.4);
+}
+
+.task-button {
   width: 3vw;
-  background-color: #7E64F1;
-  color:white;
-  box-shadow: 2px 2px 2px 2px rgba(59, 58, 1, 0.233);
-
-
+  background: linear-gradient(45deg, #7E64F1, #5A4EC6);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(59, 58, 1, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
 }
+
+.task-button:hover {
+  transform: scale(1.05);
+  box-shadow: 3px 3px 8px rgba(59, 58, 1, 0.4);
+}
+
 
 .task-align{
   

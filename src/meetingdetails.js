@@ -33,6 +33,7 @@ const App = () => {
               <b>Host</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;David Luka<br /><br />
               <b>Subject</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Final Sitting
             </Card>
+            <Card className='meet-card2'></Card>
             &nbsp;&nbsp;&nbsp;&nbsp;
             <Card className='profile-card'>
               <div className="profile-container">
@@ -53,6 +54,7 @@ const App = () => {
 <h4>Open Activities</h4>
               </div>
             </Card>
+            
             
           </div>
         </Card>

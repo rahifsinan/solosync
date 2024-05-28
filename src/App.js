@@ -42,22 +42,22 @@ function App() {
         <div className="app-container">
           <ul className="App-header">
             <li>
-              <Link to="/home">Home</Link>
+              <Link to="/home"></Link>
             </li>
             <li>
-              <Link to="/meetings">Meetings</Link>
+              <Link to="/meetings"></Link>
             </li>
             <li>
-              <Link to="/tasks">Tasks</Link>
+              <Link to="/tasks"></Link>
             </li>
             <li>
-              <Link to="/contacts">Contacts</Link>
+              <Link to="/contacts"></Link>
             </li>
             <li>
-              <Link to="/calls">Calls</Link>
+              <Link to="/calls"></Link>
             </li>
             <li>
-              <Link to="/leads">Leads</Link>
+              <Link to="/leads"></Link>
             </li>
             <li>
               <Link to="/deals"></Link>

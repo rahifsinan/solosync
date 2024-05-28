@@ -32,11 +32,22 @@ const COLORS2 = ['#0088FE', '#d2d2d2','#CAEAAC','#ACCF71','#00A593','#028745'];
 const data2 = [
   { value: 30 }, { value: 40 },{ value: 20 }, { value: 10 },{ value: 30 }, { value: 60 }
 ];
+// Sample data for the two pie charts
 const data3 = [
-  { value: 20 }, { value: 30 },{ value: 40 }, { value: 10 },
+  { name: 'Group A', value: 400 },
+  { name: 'Group B', value: 200 },
+  
 ];
 
-const COLORS3 = ['#0088FE', '#d2d2d2','#CAEAAC','#ACCF71'];
+const data4 = [
+  { name: 'Group C', value: 200 },
+  { name: 'Group D', value: 400 },
+  
+
+];
+
+const COLORS3 = ['#0088FE', '#ffffff'];
+const COLORS4 = ['#FF6347', '#ffffff'];
 const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
   const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
   const x = cx + radius * Math.cos(-midAngle * (Math.PI / 180));
@@ -395,37 +406,52 @@ const App = () => {
          
            
 
-            <div className="div-pipeline">
+              <div className="div-piechart">
+              <ResponsiveContainer width="100%" height={200}>
+  <PieChart>
+    <Pie
+      data={data3}
+      cx="50%"
+      cy="50%"
+      startAngle={360}
+      endAngle={0}
+      outerRadius={80}
+      paddingAngle={0}
+      dataKey="value"
+      labelLine={false}
+    >
+      {data3.map((entry, index) => (
+        <Cell key={`cell-${index}`} fill={COLORS3[index]} />
+      ))}
+    </Pie>
+    
+    <Pie
+      data={data4}
+      cx="50%"
+      cy="50%"
+      startAngle={360} 
+      endAngle={0}
+      outerRadius={60}
+      paddingAngle={0}
+      dataKey="value"
+      labelLine={false}
+    >
+      {data4.map((entry, index) => (
+        <Cell key={`cell-${index}`} fill={COLORS4[index]} />
+      ))}
+    </Pie>
+    <Legend
+      iconSize={10}
+      width={120}
+      height={140}
+      layout="vertical"
+      verticalAlign="middle"
+      align="right"
+    />
+  </PieChart>
+</ResponsiveContainer>
 
-            <ResponsiveContainer width="100%" height={200}>
-    <PieChart>
-      <Pie
-        data={data3}
-        cx="50%"
-        cy="50%"
-        startAngle={180}
-        endAngle={0}
-        innerRadius={60}
-        outerRadius={80}
-        paddingAngle={0}
-        dataKey="value"
-        labelLine={false}
-      >
-        {data3.map((entry, index) => (
-          <Cell key={`cell-${index}`} fill={COLORS3[index]} />
-        ))}
-      </Pie>
-      <Legend
-        iconSize={10}
-        width={120}
-        height={140}
-        layout="vertical"
-        verticalAlign="middle"
-        align="right"
-      />
-    </PieChart>
-  </ResponsiveContainer>
-            </div>
+  </div>
           
                 
                 

@@ -169,7 +169,8 @@ function App() {
                         required
                     /><br/><br/>
              <div className='task-right'>
-             <button className="task-button3">Cancel</button>&nbsp;&nbsp;&nbsp;
+             <button className="task-button3
+             ">Cancel</button>&nbsp;&nbsp;&nbsp;
               <Link to="/addmeetings">
             <button className="task-button">Save</button></Link>&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;

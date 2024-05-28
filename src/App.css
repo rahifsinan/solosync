@@ -342,7 +342,7 @@
   /* Adjust width of each card */
   height: calc(100vh - 620px);
   border-radius: 12px;
-  box-shadow: 2px 2px 2px 2px rgba(59, 58, 1, 0.233);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.233);
   margin-top: 40px;
   margin-left: 2vw;
   padding: 70px; 
@@ -367,60 +367,49 @@
   width: 45vw;
   height: calc(48vh - 100px);
   border-radius: 12px;
-  box-shadow: 2px 2px 2px 2px rgba(59, 58, 1, 0.233);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.233);
   margin-left: 20px;
 }
   
   .div-table{
     width: 69vw;
+    margin: 40px auto;
     /* Adjust width of each card */
-    height: calc(100vh - 500px);
+    height: calc(100vh - 490px);
     border-radius: 12px;
-    box-shadow: 2px 2px 2px 2px rgba(59, 58, 1, 0.233);
-    margin-top: 40px;
-    padding: 70px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.233);
+    padding: 60px;
    
   
   }
   .lead-table {
-    width: 100%;
-    max-width: 800px;
-    
-    
+    width:70vw;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly elevated box shadow */
     background-color: #ffffff;
   }
   
-  .lead-table table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 1px solid #000000;
-  }
+ 
   
   .lead-table th
   {
-    font-family:sans-serif;
-    padding: 10px;
+    font-family: sans-serif;
+    padding: 15px;
     text-align: center;
     border: 1px solid #eeecec; /* No border by default */
+    background-color: #d2d2d2; /* Green background for headers */
+     /* White text color for headers */
   }
   
   .lead-table td {
-    font-family:sans-serif;
-    padding: 8px;
+    font-family: sans-serif;
+    padding: 15px;
     text-align: center;
     border: 1px solid #eeecec; /* No border by default */
+    background-color: #f9f9f9; /* Light grey background for cells */
   }
   
-  .lead-table td {
-    border: none;
-    border-bottom: 1px solid #ddd;
-    position: relative;
-    
-    white-space: nowrap;
-    text-align: center;
-  }
+ 
   
   
   .lead-table th:not(:last-child) {
@@ -437,7 +426,7 @@
   width: calc(85vw - 100px);
   height: calc(30vh - 100px);
   border-radius: 12px;
-  box-shadow: 2px 2px 2px 2px rgba(59, 58, 1, 0.233);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.233);
   margin-left: 20px;
 }
 
@@ -705,23 +694,24 @@ width: 60%;
 
 
 .meeting-table {
-  max-width: 800px;
-  margin: 1px auto;
+  width: 85vw;
+  margin: 40px auto;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly elevated box shadow */
   background-color: #ffffff;
+  overflow-x: auto;
 }
 
 .meeting-table table {
-  width: 89%;
-  padding: 80px;
+  width: 100%;
   border-collapse: collapse;
-  border: 1px solid #000000;
+  
+  
 }
 
 .meeting-table th {
   font-family: sans-serif;
-  padding: 10px;
+  padding: 13px;
   text-align: center;
   border: 1px solid #eeecec; /* No border by default */
   background-color: #d2d2d2; /* Green background for headers */
@@ -730,7 +720,7 @@ width: 60%;
 
 .meeting-table td {
   font-family: sans-serif;
-  padding: 8px;
+  padding: 13px;
   text-align: center;
   border: 1px solid #eeecec; /* No border by default */
   background-color: #f9f9f9; /* Light grey background for cells */
@@ -799,8 +789,8 @@ width: 60%;
 }
 
 .task-button {
-  width: 3vw;
-  background: linear-gradient(45deg, #7E64F1, #5A4EC6);
+  width: 4vw;
+  background: linear-gradient(45deg, #685c99, #5A4EC6);
   color: white;
   border: none;
   border-radius: 8px;
@@ -848,12 +838,23 @@ width: 60%;
 }
 
 .task-button3{
-  width: 5vw;
-  background-color: #ffffff;
-  color:black;
-  box-shadow: 2px 2px 2px 2px rgba(59, 58, 1, 0.233);
+  width: 4vw;
+  background: linear-gradient(45deg, #838383, #eecccc);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(59, 58, 1, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
 
 
+}
+
+.task-button3:hover {
+  transform: scale(1.05);
+  box-shadow: 3px 3px 8px rgba(59, 58, 1, 0.4);
 }
 
 .meeting-right{
@@ -962,7 +963,7 @@ input {
 /* It containds the Form and Page Styling*/
 
 body {
-  background: #d2d2d2;
+  background: #ffffff;
   
 }
 .task-form {

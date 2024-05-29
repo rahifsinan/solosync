@@ -68,7 +68,7 @@ const App = () => {
 
               <br />
               <br />
-
+              <Link to="/taskdetails">
               <div className="task1">
                 <img
                   loading="lazy"
@@ -77,6 +77,7 @@ const App = () => {
                 />
                 Task 1
               </div>
+              </Link>
               <div className="task2">
                 <img
                   loading="lazy"

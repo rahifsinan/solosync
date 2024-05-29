@@ -319,6 +319,7 @@
   right:10px;
   position: absolute;
   
+  
 
 }
 
@@ -329,16 +330,18 @@
 
 .main-card{
   height:calc(100vh - -500px);
+  width:calc(100vw - -500px);
   left: 19vw;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
   
+  
 }
 
 .meet-card{
   width: 59vw;
-  background-color: #f0f0f0;
+  background-color: #9c9999;
   /* Adjust width of each card */
   height: calc(100vh - 620px);
   border-radius: 12px;
@@ -694,7 +697,7 @@ width: 60%;
 
 
 .meeting-table {
-  width: 85vw;
+  width: 82vw;
   margin: 40px auto;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly elevated box shadow */
@@ -702,12 +705,6 @@ width: 60%;
   overflow-x: auto;
 }
 
-.meeting-table table {
-  width: 100%;
-  border-collapse: collapse;
-  
-  
-}
 
 .meeting-table th {
   font-family: sans-serif;

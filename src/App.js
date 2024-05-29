@@ -17,6 +17,7 @@ import Addtask from './addtask';
 import Addmeetings from './addmeetings';
 import Addcontact from './addcontact';
 import Meetingdetails from './meetingdetails';
+import Taskdetails from './taskdetails';
 
 // Define Note component separately
 
@@ -45,10 +46,10 @@ function App() {
               <Link to="/home"></Link>
             </li>
             <li>
-              <Link to="/meetings"></Link>
+              <Link to="/tasks"></Link>
             </li>
             <li>
-              <Link to="/tasks"></Link>
+              <Link to="/meetings"></Link>
             </li>
             <li>
               <Link to="/contacts"></Link>
@@ -83,6 +84,9 @@ function App() {
             <li>
               <Link to="/meetingdetails"></Link>
             </li>
+            <li>
+              <Link to="/taskdetails"></Link>
+            </li>
           </ul>
           <Routes>
             <Route path="/home" element={<Home />} />
@@ -98,6 +102,7 @@ function App() {
             <Route path="/addmeetings" element={<Addmeetings />} />
             <Route path="/addcontact" element={<Addcontact />} />
             <Route path="/meetingdetails" element={<Meetingdetails />} />
+            <Route path="/taskdetails" element={<Taskdetails />} />
           </Routes>
         </div>
       </Router>

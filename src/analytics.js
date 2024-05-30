@@ -407,51 +407,49 @@ const App = () => {
            
 
               <div className="div-piechart">
-              <ResponsiveContainer width="100%" height={200}>
-  <PieChart>
-    <Pie
-      data={data3}
-      cx="50%"
-      cy="50%"
-      startAngle={360}
-      endAngle={0}
-      outerRadius={80}
-      paddingAngle={0}
-      dataKey="value"
-      labelLine={false}
-    >
-      {data3.map((entry, index) => (
-        <Cell key={`cell-${index}`} fill={COLORS3[index]} />
-      ))}
-    </Pie>
-    
-    <Pie
-      data={data4}
-      cx="50%"
-      cy="50%"
-      startAngle={360} 
-      endAngle={0}
-      outerRadius={60}
-      paddingAngle={0}
-      dataKey="value"
-      labelLine={false}
-    >
-      {data4.map((entry, index) => (
-        <Cell key={`cell-${index}`} fill={COLORS4[index]} />
-      ))}
-    </Pie>
-    <Legend
-      iconSize={10}
-      width={120}
-      height={140}
-      layout="vertical"
-      verticalAlign="middle"
-      align="right"
-    />
-  </PieChart>
-</ResponsiveContainer>
-
-  </div>
+      <ResponsiveContainer width="100%" height={200}>
+        <PieChart>
+          <Pie
+            data={data3}
+            cx="50%"
+            cy="50%"
+            startAngle={360}
+            endAngle={0}
+            outerRadius={80}
+            paddingAngle={0}
+            dataKey="value"
+            labelLine={false}
+          >
+            {data3.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={COLORS3[index]} />
+            ))}
+          </Pie>
+          <Pie
+            data={data4}
+            cx="50%"
+            cy="50%"
+            startAngle={360}
+            endAngle={0}
+            outerRadius={60}
+            paddingAngle={0}
+            dataKey="value"
+            labelLine={false}
+          >
+            {data4.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={COLORS4[index]} />
+            ))}
+          </Pie>
+          <Legend
+            iconSize={10}
+            width={120}
+            height={140}
+            layout="vertical"
+            verticalAlign="middle"
+            align="right"
+          />
+        </PieChart>
+      </ResponsiveContainer>
+    </div>
           
                 
                 

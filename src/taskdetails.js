@@ -2,6 +2,7 @@ import React from 'react';
 import Card from "@mui/material/Card";
 import './App.css';
 import profileImage from './assets/Profile.jpg';
+import { BrowserRouter as Router, Routes, Route, Link, } from "react-router-dom";
 
 const App = () => {
   return (
@@ -22,7 +23,9 @@ const App = () => {
           <div className="flex-container">
             <Card className='meet-card'>
             <div className='task-right'>
+            <Link to="/home">
             <button className="task-button">close&nbsp;task</button>
+            </Link>
             </div>
             <div className="trt">
                 Priority
@@ -53,8 +56,7 @@ const App = () => {
                 </div>
               </div>
             </Card>
-            <Card className='meet-card2'></Card>
-            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <Card className='profile-card'>
               <div className="profile-container">
                 <div className="trt">
@@ -76,9 +78,51 @@ const App = () => {
 <h4>Open Activities</h4>
               </div>
             </Card>
+            </div>
+            <Card className='meet-card'>
+            <div className="trt">
+            <h3>Task Information</h3>
+            </div>
+            <div className="trt">
+                Subject
+                <div className="side-part-task">
+                 Task 1
+        
+                </div>
+              </div>
+              <div className="trt">
+                Due&nbsp;Date
+                <div className="side-part-task">
+                 12/05/2024
+        
+                </div>
+              </div>
+              <div className="trt">
+                Contact
+                <div className="side-part-task">
+                 David&nbsp;Luka
+        
+                </div>
+              </div>
+              <div className="trt">
+                Status
+                </div>
+                <div className="side-part-task">
+                Not&nbsp;Completed
+        
+                </div>
+                <div className="trt">
+                Priority
+                <div className="side-part-task">
+                High
+        
+                </div>
+
+              </div>
+            </Card>
             
             
-          </div>
+         
         </Card>
         
       </div>

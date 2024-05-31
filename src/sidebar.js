@@ -22,7 +22,7 @@ export const Sidebar = ({ isOpen, closeSidebar }) => {
         </div>
 
         <ul className='sidebar-list'>
-        <li className='sidebar-list-item' onClick={() => handleItemClick('/home')}>
+        <li className='sidebar-list-item'>
             
             <Link to="/home">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">

@@ -340,8 +340,8 @@
 }
 
 .meet-card{
-  width: 79vw;
-  color: #d8cbcb;
+  width: 49vw;
+  background-color:black;
   /* Adjust width of each card */
   height: calc(100vh - 480px);
   border-radius: 12px;
@@ -357,8 +357,8 @@
 
 
 .profile-card{
-  width:30vw;
-  height:calc(100vh - 120px);
+  width:25vw;
+  height:calc(100vh - 320px);
   color: #d2d2d2;
   border-radius: 50%;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.233);
@@ -525,6 +525,13 @@ padding-left: 20px;
   position: fixed;
 }
 
+.side-part-cont{
+ 
+  font-weight:700;
+  margin-left:10px;
+  
+ }
+
 .side-part-task{
  
   font-weight:700;
@@ -624,9 +631,10 @@ width: 60%;
 
 .trt{
   display: flex;
-  padding-left: 60px;
+  padding-left: 90px;
   padding-right:500px;
   justify-content: space-between;
+ 
   
 }
 

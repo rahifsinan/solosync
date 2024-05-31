@@ -68,7 +68,7 @@ function App() {
         <h2>Create Contact</h2>
         <div className='task-right'>
         <button className="task-button3">Cancel</button> &nbsp;&nbsp;&nbsp;
-        <Link to="/addtask">    
+        <Link to="/viewcontacts">   
         <button className="task-button">Save</button>
         </Link>&nbsp;&nbsp;&nbsp;
         

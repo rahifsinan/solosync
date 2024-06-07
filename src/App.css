@@ -390,6 +390,34 @@
    
   
   }
+
+
+  .cont-card1{
+    width: 69vw;
+    margin: 40px auto;
+    /* Adjust width of each card */
+    height: calc(100vh - 690px);
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.233);
+    padding: 60px;
+
+
+
+  }
+
+
+  .cont-card2{
+    width: 69vw;
+    margin: 40px auto;
+    /* Adjust width of each card */
+    height: calc(100vh - 600px);
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.233);
+    padding: 60px;
+
+
+
+  }
   .lead-table {
     width:70vw;
     border-radius: 8px;
@@ -841,9 +869,9 @@ width: 60%;
 
 .task-align{
   
-  text-align:left;
+  
   padding-left:20px;
-  padding-top:20px;
+  padding-top:10px;
 }
 
 .taskprofile-align{
@@ -908,6 +936,12 @@ width: 60%;
   padding-left: 600px;
   padding-bottom:30px;
   border-radius: 30px;
+
+}
+
+.toggle-right{
+  margin-left: 300px;
+  margin-top:-50px;
 
 }
 
@@ -1006,11 +1040,21 @@ body {
 }
 .task-form {
   background-color: #fff;
-  width: calc(73vw - 100px);
-  text-align: center;
+  width: calc(50vw - 100px);
+  text-align: left;
   margin: auto;
   border: none;
-  margin-top: 20px;
+  margin-top: 60px;
+}
+
+
+.meet-form {
+  background-color: #fff;
+  width: calc(30vw - 100px);
+  text-align: left;
+  margin: auto;
+  border: none;
+  margin-top: 60px;
 }
 
 
@@ -1027,7 +1071,6 @@ label {
   margin-top: 8px;
   margin-bottom: 5px;
   text-align: left;
-  
   font-weight: bold;
 }
 
@@ -1035,7 +1078,7 @@ label {
 input[type="text"], 
 input[type="email"], 
 input[type="tel"] {
-    width: 800px;
+  width: calc(33vw - 100px);
     height:5px;
     padding: 10px;
     margin: 10px 0;
@@ -1074,7 +1117,7 @@ input[type="tel"]::placeholder {
 input[type="text"], 
 input[type="email"], 
 input[type="tel"] {
-    width: 800px;
+  width: calc(33vw - 100px);
     height:5px;
     padding: 10px;
     margin: 10px 0;
@@ -1115,7 +1158,6 @@ input[type="tel"]::placeholder {
 /* Add these styles for the modal */
 .modal {
   display: none;
-  position: fixed;
   z-index: 1;
   left: 0;
   top: 0;
@@ -1165,9 +1207,96 @@ input[type="tel"]::placeholder {
   border-radius: 50%;
 }
 
+
+/* src/Modal.css */
+/* Modal.css */
+.task-page {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.open-modal-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modal {
+  display: flex;
   
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+}
 
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* src/ToggleSwitch.css */
+.toggle-switch {
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.switch {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin-top:300px;
+}
+
+.switch.on {
+  background-color: #4cd137;
+}
+
+.handle {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.switch.on .handle {
+  transform: translateX(30px);
+}
 
 
 

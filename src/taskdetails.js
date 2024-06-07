@@ -106,10 +106,10 @@ const App = () => {
               </div>
               <div className="trt">
                 Status
-                </div>
+                
                 <div className="side-part-task">
                 Not&nbsp;Completed
-        
+                </div>
                 </div>
                 <div className="trt">
                 Priority

@@ -18,7 +18,8 @@ import Addmeetings from './addmeetings';
 import Addcontact from './addcontact';
 import Meetingdetails from './meetingdetails';
 import Taskdetails from './taskdetails';
-import Viewcontacts from './viewcontacts'
+import Viewcontacts from './viewcontacts';
+import Login from './login';
 
 // Define Note component separately
 
@@ -42,56 +43,7 @@ function App() {
       <Router>
         <Sidebar />
         <div className="app-container">
-          <ul className="App-header">
-            <li>
-              <Link to="/home"></Link>
-            </li>
-            <li>
-              <Link to="/tasks"></Link>
-            </li>
-            <li>
-              <Link to="/meetings"></Link>
-            </li>
-            <li>
-              <Link to="/contacts"></Link>
-            </li>
-            <li>
-              <Link to="/calls"></Link>
-            </li>
-            <li>
-              <Link to="/leads"></Link>
-            </li>
-            <li>
-              <Link to="/deals"></Link>
-            </li>
-            <li>
-              <Link to="/analytics"></Link>
-            </li>
-            <li>
-              <Link to="/addNote"></Link>
-            </li>
-            <li>
-              <Link to="/"></Link>
-            </li>
-            <li>
-              <Link to="/addtask"></Link>
-            </li>
-            <li>
-              <Link to="/addmeetings"></Link>
-            </li>
-            <li>
-              <Link to="/addcontact"></Link>
-            </li>
-            <li>
-              <Link to="/meetingdetails"></Link>
-            </li>
-            <li>
-              <Link to="/taskdetails"></Link>
-            </li>
-            <li>
-              <Link to="/viewcontacts"></Link>
-            </li>
-          </ul>
+         
           <Routes>
             <Route path="/home" element={<Home />} />
             <Route path="/meetings" element={<Meetings />} />
@@ -108,6 +60,8 @@ function App() {
             <Route path="/meetingdetails" element={<Meetingdetails />} />
             <Route path="/taskdetails" element={<Taskdetails />} />
             <Route path="/viewcontacts" element={<Viewcontacts />} />
+            <Route path="/login" element={<Login />} />
+            
           </Routes>
         </div>
       </Router>

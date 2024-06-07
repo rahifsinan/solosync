@@ -3,6 +3,7 @@ import Card from "@mui/material/Card";
 import './App.css';
 import profileImage from './assets/Profile.jpg';
 
+
 const App = () => {
   return (
     <div className="scrollable-container">

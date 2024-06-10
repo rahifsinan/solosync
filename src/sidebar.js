@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, } from "react-router-dom";
-const handleItemClick = (route) => {
-    window.location.href = route; // Navigate to the specified route
-};
-export const Sidebar = ({ isOpen, closeSidebar }) => {
-    
+
+const Sidebar = ({ isOpen, closeSidebar }) => {
+    const [isSidebarOpen, setIsSidebarOpen] = useState(isOpen);
+  
+    const toggleSidebar = () => {
+      setIsSidebarOpen(!isSidebarOpen);
+    };
     
  
 
@@ -22,6 +24,7 @@ export const Sidebar = ({ isOpen, closeSidebar }) => {
         </div>
 
         <ul className='sidebar-list'>
+
         <li className='sidebar-list-item'>
             
             <Link to="/home">

@@ -1,33 +1,38 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const Sidebar = ({ isOpen, closeSidebar }) => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(isOpen);
-  
+
     const toggleSidebar = () => {
-      setIsSidebarOpen(!isSidebarOpen);
+        setIsSidebarOpen(!isSidebarOpen);
     };
-    
- 
 
-  return (
-    <aside id="sidebar">
-      <div className="profile-button">
-        <div className="profile-icon-square">N</div>
-        <div >&nbsp;&nbsp;Novo X's Hub&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div> 
-        <div className="text-wrapper-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-	<path fill="currentColor" d="M12 17a1.72 1.72 0 0 1-1.33-.64l-4.21-5.1a2.1 2.1 0 0 1-.26-2.21A1.76 1.76 0 0 1 7.79 8h8.42a1.76 1.76 0 0 1 1.59 1.05a2.1 2.1 0 0 1-.26 2.21l-4.21 5.1A1.72 1.72 0 0 1 12 17" />
-</svg>
-</div>
+    return (
+        <>
+            <aside id="sidebar">
+                
+            <div className="" onClick={toggleSidebar}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 8h12M6 12h12M6 16h12" />
+                        </svg>
+                    
+                </div>
 
-        </div>
-
-        <ul className='sidebar-list'>
-
-        <li className='sidebar-list-item'>
-            
-            <Link to="/home">
+                <ul className={`sidebar-list ${isSidebarOpen ? 'active' : ''}`}>
+                    <div className={`sidebar ${isSidebarOpen ? 'active' : ''}`}>
+                        <div className="sd-header">
+                            <div className="btn btn-primary" onClick={toggleSidebar}>
+                                <i className="fa fa-times"></i>
+                            </div>
+                        </div>
+                        <div className="profile-button">
+                            <div className="profile-icon-square">N</div>
+                            <div>&nbsp;&nbsp;Novo X's Hub&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                            
+                        </div>
+                        <li className='sidebar-list-item'>
+                        <Link to="/home">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
 	<path fill="currentColor" d="M19.75 10a.75.75 0 0 0-1.5 0zm-14 0a.75.75 0 0 0-1.5 0zm14.72 2.53a.75.75 0 1 0 1.06-1.06zM12 3l.53-.53a.75.75 0 0 0-1.06 0zm-9.53 8.47a.75.75 0 1 0 1.06 1.06zM7 21.75h10v-1.5H7zM19.75 19v-9h-1.5v9zm-14 0v-9h-1.5v9zm15.78-7.53l-9-9l-1.06 1.06l9 9zm-10.06-9l-9 9l1.06 1.06l9-9zM17 21.75A2.75 2.75 0 0 0 19.75 19h-1.5c0 .69-.56 1.25-1.25 1.25zm-10-1.5c-.69 0-1.25-.56-1.25-1.25h-1.5A2.75 2.75 0 0 0 7 21.75z" />
 </svg>Home
@@ -88,7 +93,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M19 17v-5.2c-.5.1-1 .2-1.5.2H17v6H7v-7c0-2.8 2.2-5 5-5c.1-1.3.7-2.4 1.5-3.3c-.3-.4-.9-.7-1.5-.7c-1.1 0-2 .9-2 2v.3C7 5.2 5 7.9 5 11v6l-2 2v1h18v-1zm-9 4c0 1.1.9 2 2 2s2-.9 2-2zM21 6.5c0 1.9-1.6 3.5-3.5 3.5S14 8.4 14 6.5S15.6 3 17.5 3S21 4.6 21 6.5"/></svg>Notifications
                 </a>
             </li>
-        </ul>
+       
         <hr className="sidebar-divider" />
 
        
@@ -97,15 +102,11 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
 	<path fill="currentColor" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m-1-7v2h2v-2zm2-1.645A3.502 3.502 0 0 0 12 6.5a3.501 3.501 0 0 0-3.433 2.813l1.962.393A1.5 1.5 0 1 1 12 11.5a1 1 0 0 0-1 1V14h2z" />
 </svg> Help
           </div>
- 
-   
-   
-   
-     
-        
-    </aside>
-  )
-}
+                    </div>
+                </ul>
+            </aside>
+        </>
+    );
+};
 
-export default Sidebar
-
+export default Sidebar;

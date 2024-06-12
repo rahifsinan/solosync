@@ -262,7 +262,8 @@ const App = () => {
                       </svg>
                     </span>
                   </div>
-                  <ResponsiveContainer width="100%" height={200}>
+                  <ResponsiveContainer width="100%" height={150}>
+                    <br/>
   <BarChart
     layout="vertical"
     data={barChartData}

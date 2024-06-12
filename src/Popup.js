@@ -7,10 +7,9 @@ const Popup = ({ onClose }) => (
     <div className="trt">
                 <img className="profile-image" src={profileImage} alt="Profile" />
                 <div className="side-part-task">
-              <div className="profile-name">David&nbsp;Luka</div>
-              <a href="">View&nbsp;Profile</a>
-              </div></div>
-      <button onClick={onClose}>Close</button>
+              <div className="profile-name">Rahif Sinan KM</div>
+              <a href="">rahifsinankm@gmail.com</a> <br/>  <br/> <br/>    
+      <button className="button-prof" onClick={onClose}>LOGOUT</button></div></div>
     </div>
   </div>
 );
